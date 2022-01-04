@@ -1,0 +1,104 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: Lato, sans-serif;
+    background: linear-gradient(90deg, #ffffff, #8c8d98);
+}
+/*HEADER*/
+header{
+    background-color: #095776;
+    padding: 15px;
+}
+header h1{
+    color: #ffffff;
+    margin-top: 7px;
+}
+header #navbar{
+    border: 0px solid #000000;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+header a{
+    position: absolute;
+    right: 2%;
+    top: 2.5%;
+    text-decoration: none;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    padding: 10px;
+}
+/*SECTION tache-form*/
+#tache-form{
+    border: 1px solid #000000;
+    box-shadow: 1px 2px 6px #dc0e25;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #095776;
+    margin-top: 6%;
+    color: #f7f7f7;
+    border-radius: 5px;
+}
+h4{
+    margin-top: 15px;
+}
+.taches{
+    border: 1px solid #ffffff;
+    margin: 20px auto;
+    width: 600px;
+}
+td{
+    padding: 15px;
+}
+th{
+    padding: 15px;
+}
+#inserer{
+    margin-top: 15px;
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 3px revert ;
+}
+#envoyer{
+    margin-top: 15px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000000;
+    box-shadow: 1px 2px 6px #f7f7f7;
+    border-radius: 8px;
+    transition: 0.5s ease-in 0s;
+}
+#envoyer:hover{
+    font-size: 15px;
+    width: 75px;
+    height: 35px;
+    transform: rotate(10deg);
+    transition: 0.5s ease-in 0s;
+}
+/*barre annimation*/
+    @keyframes tipsy {
+        100% {
+            transform: translateX(-40%) translateY(-40%) rotate(0deg);
+        }
+    }
+    #divider:after {
+        content: '';
+        box-shadow: 1px 3px 6px #095776;
+        width: 470px;
+        height: 1px;
+        background: #efeeff;
+        position: absolute;
+        left: 50%;
+        top: 48.5%;
+        transform: translateX(-60%) translateY(-60%) rotate(0deg);
+        animation: 2s infinite alternate ease-in-out tipsy;
+    }
